@@ -6,6 +6,8 @@ TagManager:
   tags:
   - HorizontalWall
   - VerticalWall
+  - Goal
+  - Ball
   layers:
   - Default
   - TransparentFX

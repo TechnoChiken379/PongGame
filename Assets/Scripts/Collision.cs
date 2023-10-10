@@ -1,13 +1,14 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Collision : MonoBehaviour
 {
     public float xPosition = 2f;
     public float yPosition = 2f;
-    public float xDirection = 1f; //speed X
-    public float yDirection = 2f; //speed Y
+    public float xDirection = 1.37f; //speed X
+    public float yDirection = 2.2f; //speed Y
 
     // Start is called before the first frame update
     void Start()
@@ -22,10 +23,18 @@ public class Collision : MonoBehaviour
         //xPosition += xDirection*Time.deltaTime; = Shorter Version
         yPosition = yPosition + yDirection * Time.deltaTime;
         transform.position = new Vector3(xPosition, yPosition, 0f);
+
+        
     }
 
     public void OnTriggerEnter2D(Collider2D collision)
     {
+
+        if(collision.gameObject.CompareTag("Goal"))
+        {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        }
+        
         Debug.Log("Auw!");
         if(collision.gameObject.CompareTag("HorizontalWall"))
         {
@@ -34,7 +43,8 @@ public class Collision : MonoBehaviour
         }else if(collision.gameObject.CompareTag("VerticalWall"))
         {
             Debug.Log("my butt or my crotch");
-            xDirection = xDirection * -1f;
+            xDirection = xDirection * -1.22f;
+            yDirection = yDirection * 1.078f;
         }
     }
 }
