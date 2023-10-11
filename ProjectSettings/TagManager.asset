@@ -8,6 +8,7 @@ TagManager:
   - VerticalWall
   - Goal
   - Ball
+  - Goal2
   layers:
   - Default
   - TransparentFX
