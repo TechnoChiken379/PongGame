@@ -135,7 +135,7 @@ GameObject:
   - component: {fileID: 1997980}
   - component: {fileID: 1997982}
   m_Layer: 0
-  m_Name: HorizontalWall2
+  m_Name: HorizontalWallDown
   m_TagString: HorizontalWall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -201,12 +201,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1997979}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -5.19, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: -10.38, z: 0}
   m_LocalScale: {x: 20, y: 1.2, z: 0.5}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 1764025397}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &1997982
 BoxCollider2D:
@@ -266,8 +266,8 @@ GameObject:
   - component: {fileID: 70245160}
   - component: {fileID: 70245163}
   m_Layer: 0
-  m_Name: paddlle L
-  m_TagString: VerticalWall
+  m_Name: paddleL
+  m_TagString: VerticalWallL
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -284,7 +284,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ffaaff1d82ade0a499d4721f45cfd59e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 3
+  speed: 6
   leftOrRight: left
   maxValue: 3.8
 --- !u!212 &70245161
@@ -347,12 +347,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 70245159}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -8, y: 0, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -8, y: -5.19, z: 0}
   m_LocalScale: {x: 0.4, y: 2, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 1764025397}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &70245163
 BoxCollider2D:
@@ -639,12 +639,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 790531387}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: -5.19, z: 0}
   m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 1764025397}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &790531390
 MonoBehaviour:
@@ -658,10 +658,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8b296fd930224f24e8d22866d35c699c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  xPosition: 2
-  yPosition: 2
-  xDirection: 1
-  yDirection: 1
+  xPosition: 0
+  yPosition: 0
+  xDirection: 4
+  yDirection: 4
 --- !u!50 &790531391
 Rigidbody2D:
   serializedVersion: 4
@@ -744,12 +744,13 @@ GameObject:
   m_Component:
   - component: {fileID: 1009469547}
   - component: {fileID: 1009469546}
-  - component: {fileID: 1009469545}
   - component: {fileID: 1009469548}
-  - component: {fileID: 1009469549}
   - component: {fileID: 1009469550}
+  - component: {fileID: 1009469545}
+  - component: {fileID: 1009469549}
+  - component: {fileID: 1009469551}
   m_Layer: 0
-  m_Name: paddlle R
+  m_Name: paddleR
   m_TagString: VerticalWall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -762,12 +763,12 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1009469544}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ffaaff1d82ade0a499d4721f45cfd59e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 3
+  speed: 5
   leftOrRight: right
   maxValue: 3.8
 --- !u!212 &1009469546
@@ -830,12 +831,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1009469544}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 8, y: 0, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 8, y: -5.19, z: 0}
   m_LocalScale: {x: 0.4, y: 2, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 1764025397}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &1009469548
 BoxCollider2D:
@@ -895,8 +896,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   yPosition: 0
+  xPosition: 0
   yDirection: 3
+  maxValue: 3.75
   ball: {fileID: 790531387}
+  paddleL: {fileID: 70245159}
+  paddleR: {fileID: 1009469544}
+  speed: 5
+  botYPosition: 0
+  botXPosition: 8
+  leftOrRight: 
 --- !u!50 &1009469550
 Rigidbody2D:
   serializedVersion: 4
@@ -924,6 +933,64 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &1009469551
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1009469544}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3cfff18abf8dd054eb5d3681f9fcb8aa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 5
+  botYPosition: 0
+  botXPosition: 0
+  leftOrRight: 
+  maxValue: 3.75
+  ball: {fileID: 790531387}
+  paddle1: {fileID: 70245159}
+  paddle2: {fileID: 1009469544}
+--- !u!1 &1764025396
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1764025397}
+  m_Layer: 0
+  m_Name: AssetsGameView
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1764025397
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1764025396}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 5.19, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 790531389}
+  - {fileID: 2097958656}
+  - {fileID: 1997981}
+  - {fileID: 1883977633}
+  - {fileID: 2090656048}
+  - {fileID: 70245162}
+  - {fileID: 1009469547}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1784960217
 GameObject:
   m_ObjectHideFlags: 0
@@ -1067,7 +1134,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 145.80002, y: 82}
+  m_AnchoredPosition: {x: 145.80002, y: 81}
   m_SizeDelta: {x: 291.60004, y: 164}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1883977631
@@ -1082,7 +1149,7 @@ GameObject:
   - component: {fileID: 1883977632}
   - component: {fileID: 1883977634}
   m_Layer: 0
-  m_Name: Square
+  m_Name: GoalL
   m_TagString: Goal
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1148,12 +1215,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1883977631}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -10.5, y: 0, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -10.5, y: -5.19, z: 0}
   m_LocalScale: {x: 1, y: 15, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 1764025397}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &1883977634
 BoxCollider2D:
@@ -1379,7 +1446,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2070120468}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8b296fd930224f24e8d22866d35c699c, type: 3}
   m_Name: 
@@ -1400,7 +1467,7 @@ GameObject:
   - component: {fileID: 2090656047}
   - component: {fileID: 2090656049}
   m_Layer: 0
-  m_Name: Square (1)
+  m_Name: GoalR
   m_TagString: Goal2
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1466,12 +1533,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2090656046}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 10.5, y: 0, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 10.5, y: -5.19, z: 0}
   m_LocalScale: {x: 1, y: 15, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 1764025397}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &2090656049
 BoxCollider2D:
@@ -1530,7 +1597,7 @@ GameObject:
   - component: {fileID: 2097958655}
   - component: {fileID: 2097958657}
   m_Layer: 0
-  m_Name: HorizontalWall
+  m_Name: HorizontalWallUp
   m_TagString: HorizontalWall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1596,12 +1663,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2097958654}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 5.19, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 20, y: 1.2, z: 0.5}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 1764025397}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &2097958657
 BoxCollider2D:
@@ -1654,11 +1721,5 @@ SceneRoots:
   m_Roots:
   - {fileID: 1784960223}
   - {fileID: 645752526}
-  - {fileID: 790531389}
-  - {fileID: 2097958656}
-  - {fileID: 1997981}
-  - {fileID: 70245162}
-  - {fileID: 1009469547}
-  - {fileID: 1883977633}
-  - {fileID: 2090656048}
   - {fileID: 413349155}
+  - {fileID: 1764025397}

@@ -2,15 +2,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-using TMPro;
-using UnityEngine.UI;
 
 public class Collision : MonoBehaviour
 {
     public float xPosition = 0f;
     public float yPosition = 0f;
-    public float xDirection = 1.37f; //speed X
-    public float yDirection = 2.2f; //speed Y
+    public float xDirection = 4f; //speed X
+    public float yDirection = 4f; //speed Y
     private GameObject scoreGameObject;
     private TMPro.TMP_Text scoreboard;
     private int player1Score;
@@ -32,25 +30,31 @@ public class Collision : MonoBehaviour
         //xPosition += xDirection*Time.deltaTime; = Shorter Version
         yPosition = yPosition + yDirection * Time.deltaTime;
         transform.position = new Vector3(xPosition, yPosition, 0f);
+        scoreboard.text = player1Score.ToString() + " - " + player2Score.ToString();
+        
     }
+
     public void OnTriggerEnter2D(Collider2D collision)
     {
+
         if(collision.gameObject.CompareTag("Goal")) // Goal 1 reset speed
         {
             xPosition = 0f;
             yPosition = 0f;
-            xDirection = 1.37f; 
-            yDirection = 2.2f;
+            xDirection = 4f; 
+            yDirection = 4f;
             player2Score++;
         }
+
         if(collision.gameObject.CompareTag("Goal2")) // Goal 2 reset speed
         {
             xPosition = 0f;
             yPosition = 0f;
-            xDirection = 1.37f; 
-            yDirection = 2.2f;
+            xDirection = 4f; 
+            yDirection = 4f;
             player1Score++;
         }
+
         Debug.Log("Auw!");
         if(collision.gameObject.CompareTag("HorizontalWall")) // Y times
         {
@@ -59,12 +63,17 @@ public class Collision : MonoBehaviour
         }else if(collision.gameObject.CompareTag("VerticalWall")) // X times
         {
             Debug.Log("my butt or my crotch");
-            xDirection = xDirection * -1.393f;
-            yDirection = yDirection * 1.278f;
+            xDirection = xDirection * -1.1f;
+            yDirection = yDirection * 1.05f;
         }
+        else if (collision.gameObject.CompareTag("VerticalWallL")) // X times
+        {
+            Debug.Log("my butt or my crotch");
+            xDirection = xDirection * -1.1f;
+            yDirection = yDirection * 1.05f;
+        }
+
     }
-    private void LateUpdate()
-    {
-        scoreboard.text = player1Score.ToString() + " - " + player2Score.ToString();
-    }
+
+       
 }

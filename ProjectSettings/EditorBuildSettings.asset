@@ -6,6 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/ball.unity
+    path: Assets/Scenes/PongAssetsScenes/ball.unity
     guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 1
+    path: Assets/Scenes/MenuScenes/botPaddleScene.unity
+    guid: 6f30e65753259364da0d6adf7d54510e
   m_configObjects: {}

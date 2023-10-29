@@ -7,16 +7,24 @@ public class botPaddle : MonoBehaviour
 {
 
     public float yPosition = 0f;
+    public float xPosition = 0f;
     public float yDirection = 3f;
+    public float maxValue = 3.75f;
     public GameObject ball;
+    public GameObject paddleL;
+    public GameObject paddleR;
+    public float speed = 5f;
+    public float botYPosition = 0f;
+    public float botXPosition;
+    public string leftOrRight;
 
     // Start is called before the first frame update
     void Start()
     {
-        
+
     }
 
-    //// Update is called once per frame
+    // Update is called once per frame
     //void Update()
     //{
     //    yPosition = yPosition + yDirection * Time.deltaTime;
@@ -29,8 +37,22 @@ public class botPaddle : MonoBehaviour
     //    }
     //}
 
-    private void Update()
+    void Update()
     {
-        transform.position = new Vector3(transform.position.x,ball.transform.position.y, 0f);   
+        Botpaddle();
+    }
+
+    void Botpaddle()
+    {
+        transform.position = new Vector3(botXPosition, botYPosition, 0f);
+        //transform.position = new Vector3(transform.position.x, ball.transform.position.y, 0f);
+        if (ball.transform.position.y > paddleR.transform.position.y && transform.position.y < maxValue)
+        {
+            botYPosition += 3f * Time.deltaTime;
+        }
+        else if (ball.transform.position.y < paddleR.transform.position.y && transform.position.y > -maxValue)
+        {
+            botYPosition += -3f * Time.deltaTime;
+        }
     }
 }
