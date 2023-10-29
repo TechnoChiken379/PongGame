@@ -20,7 +20,7 @@ public class Collision : MonoBehaviour
         scoreGameObject = GameObject.Find("score");
         scoreboard = scoreGameObject.GetComponent<TMPro.TMP_Text>();
 
-        transform.position = new Vector3(xPosition, yPosition, 0f);   
+        transform.position = new Vector3(xPosition, yPosition, 0f);
     }
 
     // Update is called once per frame
