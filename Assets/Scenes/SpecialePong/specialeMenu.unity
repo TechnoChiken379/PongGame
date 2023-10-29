@@ -238,6 +238,8 @@ GameObject:
   - component: {fileID: 585814849}
   - component: {fileID: 585814848}
   - component: {fileID: 585814851}
+  - component: {fileID: 585814852}
+  - component: {fileID: 585814853}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -326,9 +328,33 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 585814847}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 798a56b8cb4075144b4859f8d53750fd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &585814852
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 585814847}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1d46b0185f6e6194caf427a7196d1011, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &585814853
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 585814847}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dcdd47aaaceac444081b934ba312446f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &1357834845
@@ -597,14 +623,14 @@ MonoBehaviour:
     2. 2 Player vs 1 Players
 
     3. 2 Player
-    vs 1 Players + bot
+    vs bot
 
-    4. 1 Player + bot vs 2 Players
+    4. Bot vs 2 Players
 
-    5. 2 Players vs 2
-    Players
+    5. 2 Players vs 2 Players
 
-    6. 0 Players vs 0 Players'
+    6. 0 Players
+    vs 0 Players'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}

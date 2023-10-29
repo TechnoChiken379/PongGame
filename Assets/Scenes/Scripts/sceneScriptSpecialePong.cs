@@ -10,31 +10,31 @@ public class sceneScriptSpecialePong : MonoBehaviour
     {
         if (Input.GetKey(KeyCode.Alpha1))
         {
-            SceneManager.LoadScene("pvpPong");
+            SceneManager.LoadScene("pvpPong1v2");
         }
         if (Input.GetKey(KeyCode.Alpha2))
         {
-            SceneManager.LoadScene("bPongEZ");
+            SceneManager.LoadScene("pvpPong2v1");
         }
         if (Input.GetKey(KeyCode.Alpha3))
         {
-            SceneManager.LoadScene("bPongME");
+            SceneManager.LoadScene("pvpPong2vBot");
         }
         if (Input.GetKey(KeyCode.Alpha4))
         {
-            SceneManager.LoadScene("bPongHA");
+            SceneManager.LoadScene("pvpPongBotv2");
         }
         if (Input.GetKey(KeyCode.Alpha5))
         {
-            SceneManager.LoadScene("bPongNM");
+            SceneManager.LoadScene("pvpPong2v2");
         }
         if (Input.GetKey(KeyCode.Alpha6))
         {
-            SceneManager.LoadScene("specialeMode");
+            SceneManager.LoadScene("pvpPong0v0");
         }
-        if (Input.GetKey(KeyCode.Alpha7))
+        if (Input.GetKey(KeyCode.Escape))
         {
-            SceneManager.LoadScene("kysMode");
+            SceneManager.LoadScene("Menu");
         }
 
     }

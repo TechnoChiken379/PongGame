@@ -30,7 +30,7 @@ public class sceneScript : MonoBehaviour
         }
         if (Input.GetKey(KeyCode.Alpha6))
         {
-            SceneManager.LoadScene("specialeMode");
+            SceneManager.LoadScene("specialeMenu");
         }
         if (Input.GetKey(KeyCode.Alpha7))
         {
