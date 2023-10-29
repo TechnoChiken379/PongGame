@@ -72,6 +72,12 @@ public class Collision : MonoBehaviour
             xDirection = xDirection * -1.1f;
             yDirection = yDirection * 1.05f;
         }
+        else if (collision.gameObject.CompareTag("Ball")) // X times
+        {
+            Debug.Log("my butt or my crotch");
+            xDirection = xDirection * -1.1f;
+            yDirection = yDirection * 1.05f;
+        }
 
     }
 

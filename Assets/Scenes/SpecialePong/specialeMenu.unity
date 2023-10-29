@@ -458,7 +458,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: 'Welcome to PONG OF DOOM! >:D
 
-    Kies een Game Mode...'
+    Je hebt de Speciale Mode geselecteerd!'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -592,20 +592,19 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: '1. PvP
+  m_text: '1. 1 Player vs 2 Players
 
-    2. PvE D:EZ
+    2. 2 Player vs 1 Players
 
-    3. PvE D:ME
+    3. 2 Player
+    vs 1 Players + bot
 
-    4. PvE D:HA
+    4. 1 Player + bot vs 2 Players
 
-    5. PvE
-    D:NM
+    5. 2 Players vs 2
+    Players
 
-    6. Speciale
-
-    7. Kill Your Self Mode'
+    6. 0 Players vs 0 Players'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UIElements;
 
-public class botPaddle : MonoBehaviour
+public class botPaddleNM : MonoBehaviour
 {
 
     public float yPosition = 0f;
@@ -13,7 +13,7 @@ public class botPaddle : MonoBehaviour
     public GameObject ball;
     public GameObject paddleL;
     public GameObject paddleR;
-    public float speed = 5f;
+    public float speed = 9f;
     public float botYPosition = 0f;
     public float botXPosition;
     public string leftOrRight;

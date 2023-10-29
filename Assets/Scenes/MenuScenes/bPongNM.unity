@@ -747,8 +747,8 @@ GameObject:
   - component: {fileID: 1009469548}
   - component: {fileID: 1009469550}
   - component: {fileID: 1009469545}
-  - component: {fileID: 1009469549}
   - component: {fileID: 1009469551}
+  - component: {fileID: 1009469552}
   m_Layer: 0
   m_Name: paddleR
   m_TagString: VerticalWall
@@ -883,29 +883,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &1009469549
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1009469544}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 92b6c1b642ae6c046b865849ea878999, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  yPosition: 0
-  xPosition: 0
-  yDirection: 3
-  maxValue: 3.75
-  ball: {fileID: 790531387}
-  paddleL: {fileID: 70245159}
-  paddleR: {fileID: 1009469544}
-  speed: 5
-  botYPosition: 0
-  botXPosition: 8
-  leftOrRight: 
 --- !u!50 &1009469550
 Rigidbody2D:
   serializedVersion: 4
@@ -953,6 +930,29 @@ MonoBehaviour:
   ball: {fileID: 790531387}
   paddle1: {fileID: 70245159}
   paddle2: {fileID: 1009469544}
+--- !u!114 &1009469552
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1009469544}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0d43e9983bd0db84099655c6c37d42ca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  yPosition: 0
+  xPosition: 0
+  yDirection: 3
+  maxValue: 3.75
+  ball: {fileID: 790531387}
+  paddleL: {fileID: 70245159}
+  paddleR: {fileID: 1009469544}
+  speed: 9
+  botYPosition: 0
+  botXPosition: 8
+  leftOrRight: 
 --- !u!1 &1764025396
 GameObject:
   m_ObjectHideFlags: 0
